@@ -18,8 +18,8 @@
    1. Import `FastAPI` class from the `fastapi` library
    2. Create an instance of `FastAPI` (no arguments in the constructor) and assign to a variable named `app`.
       > Why `app`? Because it's a convention! We will use the name `app` in step 4.
-   3. Create a method (name it whatever you want), the method will only do one thing: return a dictionary, the dictionary can contain any keys and values you want, for example, a `message` key with a string value as a message.
-   4. Decorate the method with `@app.get("/hello")` to make it a proper HTTP API endpoint.
+   3. Create a function (name it whatever you want), the function will only do one thing: return a dictionary, the dictionary can contain any keys and values you want, for example, a `message` key with a string value as a message.
+   4. Decorate the function with `@app.get("/hello")` to make it a proper HTTP API endpoint.
    5. Add a `if __name__ == "__main__":` part to the script, and inside it run the app with `uvicorn`. For this, you need to `import uvicorn` and then call `uvicorn.run("tutorial_001:app", reload=True)`.
       > Why? This basically starts a web server and kicks off the entire stuff.
 
