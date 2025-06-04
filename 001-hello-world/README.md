@@ -35,3 +35,7 @@
 ## Solution
 
 Check the [tutorial_001_solution.py](./tutorial_001_solution.py) file for the solution.
+
+## Next
+
+Done? Great! Go to the next step [002-parametric](../002-parametric/README.md).
