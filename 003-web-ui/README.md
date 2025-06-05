@@ -36,3 +36,11 @@ The web interface will have a text input field where we can type a name, and a b
 6. Now make it pretty: replace the content of the `webui-ugly.html` file with the content of the [`webui-pretty.html`](./webui-pretty.html) file, and refresh your browser. Nothing has changed except we added some styling to make it look better.
 
 > **Notice that** we're not accessing the API directly in the browser anymore, we access the web UI that is on `/ui` and that will in turn use the API to get the data.
+
+## Solution
+
+Check the [tutorial_003_solution.py](./tutorial_003_solution.py) file for the solution.
+
+## Next
+
+Party! 🎉🍾

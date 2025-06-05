@@ -26,3 +26,7 @@
 ## Solution
 
 Check the [tutorial_002_solution.py](./tutorial_002_solution.py) file for the solution.
+
+## Next
+
+Now go to the next step [003-web-ui](../003-web-ui/README.md).
