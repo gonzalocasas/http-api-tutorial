@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minimal Web UI</title>
+</head>
+<body>
+    <h1>Hello API Web UI</h1>
+    <div class="form-group">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" placeholder="Your name">
+    </div>
+    <button onclick="sendRequest()">Say Hello</button>
+    <div id="result"></div>
+
+    <script>
+        async function sendRequest() {
+            const nameInput = document.getElementById('name');
+            const resultDiv = document.getElementById('result');
+
+            const name = nameInput.value.trim();            
+            const response = await fetch(`/hello/${encodeURIComponent(name)}`);
+            const data = await response.json();
+            resultDiv.textContent = data.message;
+            resultDiv.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
